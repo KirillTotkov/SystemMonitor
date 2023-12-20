@@ -1,0 +1,121 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.9" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "fillx,hidemode 3"
+			"$columnConstraints": "[fill]"
+			"$rowConstraints": "[166][][152][30][]"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp label4:::p::p, comp label1:::p::p, comp lblCpuUsage:::p:98:p}, space :::p, comp chartPanelCpu:::p:602:p, space ::59:x}}"
+				"$verticalGroup": "par l {seq {comp label4:::p::p, space :::p, comp label1:::p::p, space :8:8:p, comp lblCpuUsage:::p::p, space :0:81:x}, seq l {space :::p, comp chartPanelCpu:::::x, space :::p}}"
+			} ) {
+				name: "panel8"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "ЦП"
+					"font": new java.awt.Font( "Inter", 1, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Использование"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblCpuUsage"
+					"text": "10%"
+					"font": new java.awt.Font( "sansserif", 1, 18 )
+				} )
+				add( new FormComponent( "org.jfree.chart.ChartPanel" ) {
+					name: "chartPanelCpu"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0,growy"
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp label5::l:p::p, comp label6::l:p::p, comp lblMemoryUse::l:p::p, comp label7::l:p::p, comp lblMemoryFree::l:p::p}, space s:::p, comp chartPanelMemory:::p:612:p, space ::53:x}}"
+				"$verticalGroup": "par l {seq {space :::p, par l {seq l {space :0:7:x, comp label5:::p::p, space :::p, comp label6:::p::p, space :::p, comp lblMemoryUse:::p::p, space :::p, comp label7:::p::p, space :::p, comp lblMemoryFree:::p::p, space :0:0:x}, comp chartPanelMemory::l::134:x}, space :::p}}"
+			} ) {
+				name: "panel9"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Память"
+					"font": new java.awt.Font( "Inter", 1, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Использовано"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblMemoryUse"
+					"text": "342374"
+					"font": &Font0 new java.awt.Font( "Inter", 1, 18 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Свободно"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblMemoryFree"
+					"text": "34343"
+					"font": &Font1 new java.awt.Font( "Inter", 1, 18 )
+				} )
+				add( new FormComponent( "org.jfree.chart.ChartPanel" ) {
+					name: "chartPanelMemory"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 2,growy"
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator2"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 3"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp lblDiskFree::l:p::p, comp label8::l:p::p, seq l {par l {comp label10::l:p::p, comp label9::l:p::p, comp lblDiskUse::l:p::p}, space s:::p, comp progressBarDisk:::p:606:p}}, space ::59:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp label8:::p::p, space :::p, par l {seq {comp label9:::p::p, space :6:6:p, comp lblDiskUse:::p::p, space :12:12:p, comp label10:::p::p}, comp progressBarDisk:::p:73:p}, space :::p, comp lblDiskFree:::p::p, space :::x}}"
+			} ) {
+				name: "panel10"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Диск"
+					"font": new java.awt.Font( "Inter", 1, 20 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Использовано"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblDiskUse"
+					"text": "342374"
+					"font": #Font0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Свободно"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblDiskFree"
+					"text": "34343"
+					"font": #Font1
+				} )
+				add( new FormComponent( "javax.swing.JProgressBar" ) {
+					name: "progressBarDisk"
+					"value": 60
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 4,growy"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 60, 35 )
+			"size": new java.awt.Dimension( 785, 520 )
+		} )
+	}
+}
